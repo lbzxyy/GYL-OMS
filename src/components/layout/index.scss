@@ -1,0 +1,188 @@
+
+.header{
+    .logo{
+        .project-name{
+            font-family: 'PingFangSC-Medium';
+            font-size: 20px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+            i{
+                font-size: 32px;
+                vertical-align:middle;
+            }
+
+        }
+    }
+    .user-cont {
+        color: #fff;
+        font-size: 14px;
+        cursor: pointer;
+    }
+}
+.ant-menu-submenu, .ant-menu-item {
+    i{
+        padding-right: 8px;
+    }
+}
+.ant-menu-submenu-selected{
+    color: #007EEF !important;
+}
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected{
+    color: #007EEF !important;
+   
+}
+.ant-menu-item:hover, .ant-menu-item-active, .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open, .ant-menu-submenu-active, .ant-menu-submenu-title:hover{
+    color: #007EEF !important;
+   
+}
+.ant-menu-item-selected > a, .ant-menu-item-selected > a:hover{
+    color: #007EEF !important;
+}
+.ant-menu-vertical > .ant-menu-item, .ant-menu-vertical-left > .ant-menu-item, .ant-menu-vertical-right > .ant-menu-item, .ant-menu-inline > .ant-menu-item, .ant-menu-vertical > .ant-menu-submenu > .ant-menu-submenu-title, .ant-menu-vertical-left > .ant-menu-submenu > .ant-menu-submenu-title, .ant-menu-vertical-right > .ant-menu-submenu > .ant-menu-submenu-title, .ant-menu-inline > .ant-menu-submenu > .ant-menu-submenu-title {
+    height: 40px;
+    line-height: 40px;
+    margin-top: 0;
+}
+
+.ant-layout{
+    // padding-top: 46px;
+    // min-height: auto;
+    // height: 100%;
+    .ant-layout-sider::-webkit-scrollbar{
+        display:none !important;
+    }
+}
+
+.loginChange {
+    display: flex;
+    align-items: center;
+    .ant-select {
+        width: 80px;
+        color: #fff;
+        transform: scale(.9);
+    }
+    .ant-select-selection {
+        background: none;
+    }
+    .ant-select-arrow {
+        color: #fff;
+    }
+}
+
+.ant-table-thead > tr > th{
+    border-bottom: 0;
+}
+
+.content-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 46px;
+    &.no-padding {
+        padding-top: 0;
+    }
+}
+
+// 面包屑样式
+.ant-breadcrumb {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  // height: 46px;
+  padding: 15px 20px;
+  background-color: #fff;
+  & > span:last-child {
+      color: #41B3F9;
+  }
+}
+
+.data-wrap {
+    flex-grow: 1;
+    margin: 16px 20px 20px 20px;
+    overflow: auto;
+}
+.data-wrap {
+    flex-grow: 1;
+    margin: 16px 20px 20px 20px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+// 标签页样式 S
+.taglist{
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: #fff;
+   
+    .clearAll{
+        position: absolute;
+        right: 20px;
+        cursor: pointer;
+        &:hover{
+            i{
+                color: #007EEF;
+                font-weight: 900;
+            }
+           
+        }
+    }
+}
+.ant-tabs{
+    margin: 0 35px 0 5px;
+}
+.ant-tabs-bar{
+    margin: 0;
+    border: 0;
+}
+.ant-tabs.ant-tabs-card{
+    .ant-tabs-card-bar{
+        color: #999999;
+        background: #FFFFFF !important;
+    } 
+    .ant-tabs-tab{
+        background: #FFFFFF !important;
+        border: none !important;
+        padding: 0px 30px !important;
+        .ant-tabs-close-x{
+            width: 14px !important;
+            height: 14px !important;
+            &:hover{
+                background: rgba(0,126,239, .9) !important;
+                border-radius: 14px;
+                color: #fff !important;
+            }
+        }
+    }
+    .ant-tabs-tab-active{
+        background: rgba(0,126,239,.1) !important;
+        color: #007EEF !important;
+        font-weight: 600;
+
+    }
+  
+}
+ 
+.ant-tabs-nav-scroll{
+    background: #FFFFFF;
+}
+.ant-tabs-nav-container{
+    margin: 0
+}
+.ant-tabs-nav .ant-tabs-tab:hover{
+    color: #007EEF !important;
+}
+.ant-tabs-nav .ant-tabs-tab::before{
+    top: 38px;
+}
+.ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-active::before{
+    border-top: 2px solid rgba(0,126,239, .9);
+}
+.ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab .ant-tabs-close-x{
+    margin: 0 -20px 0 15px;
+}
+
+
+// 标签页样式 E
+

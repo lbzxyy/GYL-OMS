@@ -1,0 +1,29 @@
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 16px 40px;
+  .logo-cont {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .iconfont {
+    font-size: 28px;
+    color: #41b3f9;
+    margin-right: 10px;
+    font-weight: normal;
+  }
+  .login-lang {
+    a {
+      color: #666;
+    }
+  }
+  .ant-select {
+    width: 80px;
+  }
+}

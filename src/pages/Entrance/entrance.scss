@@ -1,0 +1,154 @@
+.entrance-cont {
+  height: 100%;
+  padding-top: 64px;
+  background-color: #20acef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &.login {
+    background: url('../../assets/img/login_bg.png') no-repeat center center;
+    background-size: cover;
+  }
+  &.find-password {
+    background-color: #fafbfc;
+  }
+}
+
+.findPasswordContent {
+  height: 100%;
+  padding-top: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.find-password-cont {
+  .ant-form-explain {
+    display: initial !important;
+  }
+}
+
+.find-password-cont {
+  position: relative;
+  width: 474px;
+  margin: 0 auto;
+  // padding: 100px 30px;
+  .login-form {
+    padding: 50px 50px 35px 50px;
+    .ant-form-item {
+      margin-bottom: 38px;
+      &:last-child {
+        margin-bottom: 0;
+        margin-top: -18px;
+      }
+      input {
+        height: 54px;
+      }
+      button {
+        height: 50px;
+        font-size: 14px;
+      }
+      .ant-form-explain {
+        display: none;
+      }
+    }
+  }
+  .rect-cont {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -103px;
+    margin-top: -70px;
+    width: 207px;
+    height: 70px;
+    line-height: 60px;
+    color: #666;
+    font-size: 20px;
+  }
+  .code-item {
+    .ant-form-item-children {
+      display: flex;
+    }
+    .ant-btn.dis {
+      color: #fff;
+      background-color: #41B3F9;
+      pointer-events: none;
+    }
+  }
+}
+
+.login-form-cont {
+  position: relative;
+  width: 404px;
+  height: 428px;
+  margin: 0 auto;
+  // padding: 100px 30px;
+  border-radius: 5px;
+  background: url('../../assets/img/form_bg.png') no-repeat center center;
+  .login-form {
+    padding: 115px 60px 0 60px;
+    .ant-form-item {
+      margin-bottom: 28px;
+      &:last-child {
+        margin-top: -30px;
+      }
+      input {
+        height: 54px;
+      }
+      button {
+        height: 54px;
+        font-size: 18px;
+      }
+      .ant-form-explain {
+        display: none;
+      }
+      .login-form-button {
+        width: 310px;
+        height: 68px;
+        border: none;
+        box-shadow: none;
+        box-sizing: border-box;
+        background: url('../../assets/img/login.png') no-repeat center center;
+        margin-bottom: 0;
+        margin-left: -12px;
+        span {
+          font-size: 18px;
+          position: relative;
+          transform: translateY(-6px);
+        }
+      }
+    }
+  }
+  .rect-cont {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -103px;
+    margin-top: -20px;
+    width: 207px;
+    height: 70px;
+    line-height: 70px;
+    color: #fff;
+    font-size: 22px;
+    background: url('../../assets/img/rect.png') no-repeat center center;
+  }
+  .forget-link {
+    display: block;
+    transform: translateY(-10px);
+    font-size: 13px;
+    color: #666;
+  }
+}
+
+.loginContent {
+  height: 100%;
+  padding-top: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // background: url('../../assets/img/login_bg.png') no-repeat center center;
+  // background-size: cover;
+}
+

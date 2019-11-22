@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "PingFangSC-Regular", "Microsoft YaHei", Arial, Verdana, Tahoma, "宋体", Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1440px) {
+  * {
+      font-size: 12px;
+  }
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.bf {
+  background-color: #fff;
+}
+
+.tc {
+  text-align: center;
+}
+
+.tr {
+  text-align: right;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.header{
+  display: flex;
+  height: 64px;
+  line-height: 64px;
+  justify-content: space-between;
+  border-bottom: 1px solid #EEEEEE;
+  border-radius: 4px;
+  .title{
+      position: relative;
+      font-family: 'PingFangSC-Regular';
+      font-size: 16px;
+      color: #333333;
+      padding-left: 10px;
+      // &::before{
+      //     position: absolute;
+      //     top: 21px;
+      //     left: 0;
+      //     content: '';
+      //     height: 22px;
+      //     width: 4px;
+      //     background: #41B3F9 ;
+      // }
+  }
+  .search{
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+      width: 410px;
+      .ant-select {
+          width: 120px;
+      }
+  }
+
+}
+
+/* 滚动槽 */
+.ant-table-body, .ant-table-body-inner, .ant-layout, .data-wrap, .ant-table-wrapper{
+  &::-webkit-scrollbar { /* 血槽宽度 */ 
+    width: 10px; height: 10px; 
+   } 
+  
+   &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #BBB;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: rgb(245, 243, 243);
+  }
+}
+
+// loading
+.ant-spin {
+  position: fixed;
+  left: 0;
+  top: 0;
+  max-height: initial;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: #fff, $alpha: .75);
+  z-index: 10;
+  .ant-spin-dot {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+}
+.part-spin-cont {
+  position: relative;
+  .ant-spin {
+    position: absolute;
+    .ant-spin-dot {
+      position: absolute;
+      left: 50%;
+      top: 30%;
+    }
+  }
+}
+
+// 拥有table的容器页面
+.has-table-cont {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  height: 100%;
+  .content {
+    height: 0; // 不能删
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    .ant-table-wrapper {
+      flex-grow: 1;
+      overflow-y: auto;
+    }
+    .pagination{
+      flex-shrink: 0;
+      display: flex;
+      justify-content: flex-end;
+      height: 45px;
+      align-items: flex-end;
+    }
+  }
+}
+.ant-table-placeholder {
+  border-bottom: none;
+  .ant-empty {
+    margin-top: 60px;
+    margin-bottom: 0;
+  }
+}
+.ant-layout-header {
+  padding-left: 20px;
+  padding-right: 38px;
+}
+
+
+// 表格loading 修改
+// .ant-spin-nested-loading{
+//   div{
+//     max-height: 620px;
+//     .ant-spin {
+//       max-height: 620px;
+//     }
+//   }
+// }
+// .ant-spin-nested-loading{
+//   height: 100%;
+// }
+// table hover
+.ant-table-tbody{
+  .ant-table-row{
+      // max-height: 22px;
+      td{
+        height: 20px;
+        text-overflow:ellipsis;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        // white-space: nowrap;
+      }
+      
+  }
+  .ant-table-row.ant-table-row-hover{
+    td{
+      background: #F8FBFF !important;
+    }
+  }
+}
+// 分页器 修改
+
+.ant-pagination-item-active{
+  background: #007EEF;
+  border-color: #007EEF;
+  border-radius: 6px;
+  a{
+    color: #fff;
+  }
+}
+.ant-pagination-item:focus{
+  a{
+    color: #fff;
+  }
+  
+
+}
+.anticon.anticon-search{
+  svg{display: none;}
+  &:before{
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: block;
+    content: "\e607";
+  }
+}
+
+
+// 修改antd按钮
+.ant-btn-primary {
+  background-color: #007EEF;
+  border-color: #007EEF;
+}
+// 修改弹窗 滚动条
+.ant-modal-body{
+  max-height: calc(100vh - 300px) !important;
+  overflow-y: auto;
+}
+// 分页器
+.pagination-cont {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}

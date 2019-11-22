@@ -1,0 +1,51 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "30888967",
+      "name": "02新LOGO",
+      "font_class": "xinLOGO",
+      "unicode": "e682",
+      "unicode_decimal": 59010
+    },
+    {
+      "icon_id": "43117106",
+      "name": "客户管理",
+      "font_class": "kehuguanli",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "39471870",
+      "name": "sousuo",
+      "font_class": "sousuo",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "39471871",
+      "name": "shouye",
+      "font_class": "shouye",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "39471879",
+      "name": "xitongshezhi",
+      "font_class": "xitongshezhi",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "39472373",
+      "name": "dakaifenlei",
+      "font_class": "dakaifenlei",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    }
+  ]
+}
